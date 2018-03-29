@@ -7,8 +7,9 @@ Current queries supported: getPerson(id: $id) returns each Star Wars character b
 
 <Code>curl 
   -X POST -H "Content-Type: application/json" 
-  --data '{ "query": "{ getPerson(id:1) { name }  }" }' 
-  http://localhost:4001/graphql
+  --data '{ "query": "{ getPerson(id:1) { name }  }" }' http://localhost:4001/graphql
 </Code>
+
+Return <Code>{"data":{"getPerson":{"name":"Luke Skywalker"}}}</Code>
 
 Based on the support template from Ben Awad: https://github.com/benawad/api-request-graphql
